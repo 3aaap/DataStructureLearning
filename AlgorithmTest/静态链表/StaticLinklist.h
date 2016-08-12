@@ -26,4 +26,6 @@ bool listInsert(StaticLinkList L, int i, char* e);
 
 bool listDelete(StaticLinkList L, int i);
 
+void free_SSL(StaticLinkList space, int k)；
+
 #endif /* StaticLinklist_h */

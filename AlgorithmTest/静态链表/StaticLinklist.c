@@ -19,15 +19,6 @@ bool initList(StaticLinkList space)
     return true;
 }
 
-int malloc_SLL(StaticLinkList space)
-{
-    int i = space[0].cur;
-    if (i) {
-        space[0].cur = space[i].cur;
-    }
-    return i;
-}
-
 bool listInsert(StaticLinkList L, int i, char* e)
 {
     int j, k, l;
@@ -47,10 +38,36 @@ bool listInsert(StaticLinkList L, int i, char* e)
     }
     return false;
 }
-
+// 删除链表中第 i 个数据元素
 bool listDelete(StaticLinkList L, int i)
 {
+    int j, k;
+    if (i < 1 || i > listLength(L)) {
+        return false;
+    }
+    k = MAX_SIZE - 1;
+    for (j = 1; j < i; j++) {
+        k = L[k].cur;
+    }
+    j = L[k].cur;
+    L[k].cur = L[j].cur;
+    free_SSL(L, j);
     return false;
+}
+
+int malloc_SLL(StaticLinkList space)
+{
+    int i = space[0].cur;
+    if (i) {
+        space[0].cur = space[i].cur;
+    }
+    return i;
+}
+// 将下标为 k 的空闲结点回收到备用链表，注意区分
+void free_SSL(StaticLinkList space, int k)
+{
+    space[k].cur = space[0].cur;
+    space[0].cur = k;
 }
 
 int listLength(StaticLinkList space)
