@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA384DD71E8102960074EA32 /* SortAlgrithm.c in Sources */ = {isa = PBXBuildFile; fileRef = DA384DD51E8102960074EA32 /* SortAlgrithm.c */; };
 		DA6D91791D4AF44100B88EBB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DA6D91781D4AF44100B88EBB /* main.c */; };
 		DA8601531D5D661600622CD1 /* StaticLinklist.c in Sources */ = {isa = PBXBuildFile; fileRef = DA8601511D5D661600622CD1 /* StaticLinklist.c */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA384DD51E8102960074EA32 /* SortAlgrithm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SortAlgrithm.c; sourceTree = "<group>"; };
+		DA384DD61E8102960074EA32 /* SortAlgrithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortAlgrithm.h; sourceTree = "<group>"; };
 		DA6D91751D4AF44100B88EBB /* AlgorithmTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6D91781D4AF44100B88EBB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		DA8601511D5D661600622CD1 /* StaticLinklist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = StaticLinklist.c; sourceTree = "<group>"; };
@@ -41,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA384DD41E81027D0074EA32 /* 排序算法 */ = {
+			isa = PBXGroup;
+			children = (
+				DA384DD51E8102960074EA32 /* SortAlgrithm.c */,
+				DA384DD61E8102960074EA32 /* SortAlgrithm.h */,
+			);
+			path = "排序算法";
+			sourceTree = "<group>";
+		};
 		DA6D916C1D4AF44100B88EBB = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +72,7 @@
 		DA6D91771D4AF44100B88EBB /* AlgorithmTest */ = {
 			isa = PBXGroup;
 			children = (
+				DA384DD41E81027D0074EA32 /* 排序算法 */,
 				DA8601501D5D661600622CD1 /* 静态链表 */,
 				DA6D91781D4AF44100B88EBB /* main.c */,
 			);
@@ -133,6 +146,7 @@
 			files = (
 				DA6D91791D4AF44100B88EBB /* main.c in Sources */,
 				DA8601531D5D661600622CD1 /* StaticLinklist.c in Sources */,
+				DA384DD71E8102960074EA32 /* SortAlgrithm.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

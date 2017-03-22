@@ -7,9 +7,13 @@
 //
 
 #include <stdio.h>
+#include "SortAlgrithm.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    Sqlist list = {{3, 2, 4, 1, 5}, 5};
+    selectSort(&list);
+    for (int i = 0; i < 5; i++) {
+        printf("%i\n", list.r[i]);
+    }
     return 0;
 }
