@@ -11,7 +11,7 @@
 
 int main(int argc, const char * argv[]) {
     Sqlist list = {{3, 2, 4, 1, 5}, 5};
-    selectSort(&list);
+    insertSort(&list);
     for (int i = 0; i < 5; i++) {
         printf("%i\n", list.r[i]);
     }

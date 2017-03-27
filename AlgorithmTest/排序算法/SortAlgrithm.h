@@ -26,4 +26,6 @@ void bubbleSort1(Sqlist *list);
 
 void selectSort(Sqlist* list);
 
+void insertSort(Sqlist* list);
+
 #endif /* SortAlgrithm_h */

@@ -8,6 +8,19 @@
 
 #include "SortAlgrithm.h"
 
+void insertSort(Sqlist* list) {
+    for (int i = 1; i < list->length; i++) {
+        if (list->r[i] < list->r[i - 1]) {
+            int temp = list->r[i];
+            int j;
+            for (j = i - 1; list->r[j] > temp && j >= 0; j--) {
+                list->r[j + 1] = list->r[j];
+            }
+            list->r[j + 1] = temp;
+        }
+    }
+}
+
 void bubbleSort0(Sqlist *list) {
     int flag = 1;
     for (int i = 0; i < list->length && flag; i++) {
